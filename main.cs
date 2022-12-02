@@ -15,7 +15,7 @@ class Program
         double angleA;
         double angleB;
         double angleC;
-        double sumOfAllAngles;
+        double sumOfAllAngles
 
         // This function accepts user input
         Console.WriteLine("What type of triangle is it?");
