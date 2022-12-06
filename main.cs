@@ -40,8 +40,7 @@ class Program
         sumOfAllAngles = angleA + angleB + angleC;
         Console.WriteLine("Sum of all angles " + sumOfAllAngles.ToString("0.0"));
         Console.WriteLine(" ");
-      
-        if (Convert.ToInt16(sumOfAllAngles) == 180) 
+        if (Convert.ToInt16(sumOfAllAngles) == 180)
         {
             if (angleA == angleB && angleA == angleC)
             {
@@ -62,7 +61,7 @@ class Program
             else if (angleC == angleB && angleA != angleC)
             {
                 Console.WriteLine("You have an isosceles triangle");
-            } 
+            }
         }
         else
         {
