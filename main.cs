@@ -40,26 +40,29 @@ class Program
         sumOfAllAngles = angleA + angleB + angleC;
         Console.WriteLine("Sum of all angles " + sumOfAllAngles.ToString("0.0"));
         Console.WriteLine(" ");
-
-        if (angleA == angleB && angleA == angleC)
+      
+        if (Convert.ToInt16(sumOfAllAngles) == 180) 
         {
-            Console.WriteLine("You have an equilateral triangle");
-        }
-        else if (angleA != angleB && angleA != angleC && angleB != angleC)
-        {
-            Console.WriteLine("You have an scalene triangle");
-        }
-        else if (angleA != angleB && angleA == angleC)
-        {
-            Console.WriteLine("You have an isosceles triangle");
-        }
-        else if (angleA == angleB && angleA != angleC)
-        {
-            Console.WriteLine("You have an isosceles triangle");
-        }
-        else if (angleC == angleB && angleA != angleC)
-        {
-            Console.WriteLine("You have an isosceles triangle");
+            if (angleA == angleB && angleA == angleC)
+            {
+                Console.WriteLine("You have an equilateral triangle");
+            }
+            else if (angleA != angleB && angleA != angleC && angleB != angleC)
+            {
+                Console.WriteLine("You have an scalene triangle");
+            }
+            else if (angleA != angleB && angleA == angleC)
+            {
+                Console.WriteLine("You have an isosceles triangle");
+            }
+            else if (angleA == angleB && angleA != angleC)
+            {
+                Console.WriteLine("You have an isosceles triangle");
+            }
+            else if (angleC == angleB && angleA != angleC)
+            {
+                Console.WriteLine("You have an isosceles triangle");
+            } 
         }
         else
         {
